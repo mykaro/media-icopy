@@ -1,0 +1,16 @@
+batch_limit_mb: 300
+db_path: ./session.db
+dest_root: null
+device_name: Apple iPhone
+dry_run: false
+language: en
+log_level: INFO
+log_path: ./logs/events.log
+retry_attempts: 3
+retry_backoff_seconds:
+- 1
+- 5
+- 15
+skip_aae: true
+source_folders:
+- DCIM

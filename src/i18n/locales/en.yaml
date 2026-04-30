@@ -1,0 +1,90 @@
+# Main Window
+app.title: "MEDIA ICOPY UNIFIED TRANSFER SYSTEM\n-SYSTEM READY-\n========================================================================="
+app.device_label: "> DEVICE:"
+app.no_devices: "No devices found"
+app.refresh_btn: "[ REFRESH ]"
+app.source_label: "> FOLDER ON IPHONE:"
+app.dest_label: "> FOLDER ON PC:"
+app.wait_input: "> WAITING FOR INPUT..."
+app.browse_btn: "[  BROWSE  ]"
+app.select_btn: "[ SELECT  ]"
+app.ready: "> READY FOR OPERATION."
+app.waiting: "> WAITING"
+app.skip_aae: "> IGNORE SYSTEM FILES (.AAE)"
+app.aae_tooltip: ".AAE files contain photo editing information\n(effects, filters) applied on iPhone.\nThey are not images themselves and are usually not needed\non a computer, so it's better to ignore them to save space."
+app.lang_label: "LANGUAGE:"
+app.support_btn: "[ ❤ SUPPORT THE PROJECT ]"
+app.start_btn: "[ ▶ START COPYING ]"
+app.stop_btn: "[ ✕ STOP ]"
+app.signature: "Developed by Mykaro"
+app.err_no_device: "Select a connected iPhone first!"
+app.err_no_folders: "Specify device and both folders."
+app.share_btn: "SHARE"
+app.share_copied: "COPIED!"
+
+# Status
+app.status.scanning: "> SCANNING [{time}]: FOLDER {current}/{total} (FOUND: {found}{aae})"
+app.status.progress: "> PROGRESS [{time}]: {current}/{total} | {copied_size} / {total_size}"
+app.status.remaining: "> REMAINING: {eta}"
+app.status.finished: "> COMPLETED! SUCCESS: {size}"
+app.status.finalizing: "FINALIZING..."
+app.status.error: "> CRITICAL ERROR!"
+app.status.stopping: "> STOPPING... PLEASE WAIT."
+app.status.stop_processing: "> PROCESSING STOP"
+app.status.cancelled: "> STOPPED BY USER."
+app.status.cancelled_eta: "> CANCELLED"
+app.status.analyzing: "> ANALYZING..."
+app.status.done: "> DONE"
+
+# Logs
+app.log.stop_request: "Stop request..."
+app.log.scanning: "Scanning files..."
+app.log.config_error: "Configuration error: {err}"
+
+# ETA
+app.eta.min: "~{val} min"
+app.eta.sec: "~{val} sec"
+app.eta.full: "{m} m {s} s"
+
+# Runner Logs
+runner.device_info: "Device: {device} | Destination: {dest}"
+runner.cancelled_zero: "Cancelled by user. Files copied: 0."
+runner.scanning: "Scanning ({index}/{total}): {folder}..."
+runner.aae_skipped: " ({count} system .AAE skipped)"
+runner.analysis_result: "Analysis result:\n  • Found: {found} media files{aae}\n  • Already on PC: {existing} files\n  • To copy: {to_copy}"
+runner.stopped_by_user: "Process stopped by user."
+runner.opening_folder: "Opening folder: {folder}"
+runner.copy_error: "Copy error {file}: {err}"
+runner.finished_summary: "Completed!\n  • Copied: {copied} files ({size})\n  • Skipped: {skipped} files"
+runner.cancelled_summary: "Cancelled by user. Files copied: {count}."
+runner.scan_duration: "Scan duration: {duration}"
+runner.copy_duration: "Copy duration: {duration}"
+runner.critical_error: "Critical error: {err}"
+runner.progress_prefix: "Progress:"
+
+# Folder Browser
+browser.title: "Browse: {device}"
+browser.header: "-DIRECTORY LISTING-\n===================="
+browser.path: "> PATH: {path}"
+browser.back_btn: "[ < BACK ]"
+browser.select_btn: "[ SELECT THIS FOLDER ]"
+browser.access_error: "> ACCESS ERROR.\n> UNLOCK IPHONE AND TAP 'TRUST'."
+
+# Say Thanks Window
+thanks.header: "YOUR CONTRIBUTION KEEPS US GOING!"
+thanks.msg1: "I CREATED MEDIA ICOPY TO SOLVE THE PROBLEM OF COPYING PHOTOS AND VIDEOS\nFROM IOS TO WINDOWS - FREE, SIMPLE, STABLE, AND\nWITHOUT UNNECESSARY RESTRICTIONS.\nIF THIS PROGRAM HAS BEEN USEFUL TO YOU,\nTHE BEST THANK-YOU IS YOUR SUPPORT."
+thanks.msg_intro: "EVERY ACTION YOU TAKE IS A SIGN THAT MY WORK WAS VALUABLE TO YOU.\nTHIS SUPPORT HELPS DEVELOP THE PROGRAM FURTHER AND CREATE NEW\nUSEFUL TOOLS."
+thanks.msg_reddit: "⬇ LEAVE A REVIEW, SUGGESTIONS OR SHARE WITH OTHERS ⬇"
+thanks.msg_finance: "⬇ IF YOU'D LIKE TO SUPPORT THE PROJECT FINANCIALLY ⬇"
+thanks.binance_copied: "> [ BINANCE ID COPIED TO CLIPBOARD ]"
+thanks.footer: "THANK YOU!"
+
+# Core Logic
+core.cancelled: "Operation cancelled by user."
+
+# Update Checker
+app.update_indicator: "[ UPDATE AVAILABLE ]"
+update.title: "-UPDATE AVAILABLE-"
+update.message: "NEW PROGRAM VERSION DETECTED (v{version}).\nCURRENT VERSION: v{current}\nPROGRAM UPDATE RECOMMENDED."
+update.btn_download: "[ DOWNLOAD ]"
+update.btn_skip: "[ SKIP ]"

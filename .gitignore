@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.agents/
+.vscode/
+.idea/
+*.swp
+*.swo
+skills-lock.json
+
+# Project-specific
+.gemini/
+logs/
+*.log
+session.db*
+*.tmp
+scratch/
+test_output/
+.env
+docs/todo_mtp_shell_refresh.md
+docs/solutions_log.md
+audit/
+
+# OS
+Thumbs.db
+Desktop.ini
+desktop.ini
+.DS_Store
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Type checking
+.mypy_cache/
+.pyrightpy/
+pyrightconfig.json
+
+build/
+dist/
+*.spec

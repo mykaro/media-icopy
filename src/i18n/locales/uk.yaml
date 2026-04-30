@@ -1,0 +1,90 @@
+# Main Window
+app.title: "MEDIA ICOPY UNIFIED TRANSFER SYSTEM\n-СИСТЕМА ГОТОВА-\n========================================================================="
+app.device_label: "> ПРИСТРІЙ:"
+app.no_devices: "Пристроїв не знайдено"
+app.refresh_btn: "[ ОНОВИТИ ]"
+app.source_label: "> ПАПКА НА IPHONE:"
+app.dest_label: "> ПАПКА НА ПК:"
+app.wait_input: "> ОЧІКУВАННЯ ВВОДУ..."
+app.browse_btn: "[  ОГЛЯД  ]"
+app.select_btn: "[ ОБРАТИ  ]"
+app.ready: "> ГОТОВИЙ ДО РОБОТИ."
+app.waiting: "> ОЧІКУВАННЯ"
+app.skip_aae: "> ІГНОРУВАТИ СЛУЖБОВІ ФАЙЛИ (.AAE)"
+app.aae_tooltip: "Файли .AAE містять інформацію про редагування фотографій\n(ефекти, фільтри), застосовані на iPhone.\nВони не є самими зображеннями і зазвичай не потрібні\nна комп'ютері, тому їх краще ігнорувати для економії місця."
+app.lang_label: "LANGUAGE:"
+app.support_btn: "[ ❤ ПІДТРИМАТИ ПРОЕКТ ]"
+app.start_btn: "[ ▶ ПОЧАТИ КОПІЮВАННЯ ]"
+app.stop_btn: "[ ✕ ЗУПИНИТИ ]"
+app.signature: "Developed by Mykaro"
+app.err_no_device: "Спочатку виберіть підключений iPhone!"
+app.err_no_folders: "Вкажіть пристрій та обидві папки."
+app.share_btn: "ПОДІЛИТИСЯ"
+app.share_copied: "СКОПІЙОВАНО!"
+
+# Status
+app.status.scanning: "> СКАНУВАННЯ [{time}]: ПАПКА {current}/{total} (ЗНАЙДЕНО: {found}{aae})"
+app.status.progress: "> ПРОГРЕС [{time}]: {current}/{total} | {copied_size} / {total_size}"
+app.status.remaining: "> ЗАЛИШИЛОСЬ: {eta}"
+app.status.finished: "> ЗАВЕРШЕНО! УСПІШНО: {size}"
+app.status.finalizing: "ФІНАЛІЗАЦІЯ..."
+app.status.error: "> КРИТИЧНА ПОМИЛКА!"
+app.status.stopping: "> ЗУПИНКА... БУДЬ ЛАСКА, ЗАЧЕКАЙТЕ."
+app.status.stop_processing: "> ОБРОБКА ЗУПИНКИ"
+app.status.cancelled: "> ЗУПИНЕНО КОРИСТУВАЧЕМ."
+app.status.cancelled_eta: "> СКАСОВАНО"
+app.status.analyzing: "> АНАЛІЗ..."
+app.status.done: "> ГОТОВО"
+
+# Logs
+app.log.stop_request: "Запит на зупинку..."
+app.log.scanning: "Пошук файлів..."
+app.log.config_error: "Помилка конфігурації: {err}"
+
+# ETA
+app.eta.min: "~{val} хв"
+app.eta.sec: "~{val} сек"
+app.eta.full: "{m} м {s} с"
+
+# Runner Logs
+runner.device_info: "Пристрій: {device} | Зберігати в: {dest}"
+runner.cancelled_zero: "Скасовано користувачем. Скопійовано файлів: 0."
+runner.scanning: "Сканування ({index}/{total}): {folder}..."
+runner.aae_skipped: " ({count} службових .AAE пропущено)"
+runner.analysis_result: "Результат аналізу:\n  • Знайдено: {found} медіафайлів{aae}\n  • Вже є на ПК: {existing} файлів\n  • До копіювання: {to_copy}"
+runner.stopped_by_user: "Процес зупинено користувачем."
+runner.opening_folder: "Відкриття папки: {folder}"
+runner.copy_error: "Помилка копіювання {file}: {err}"
+runner.finished_summary: "Завершено!\n  • Скопійовано: {copied} файлів ({size})\n  • Пропущено: {skipped} файлів"
+runner.cancelled_summary: "Скасовано користувачем. Скопійовано файлів: {count}."
+runner.scan_duration: "Тривалість аналізу: {duration}"
+runner.copy_duration: "Тривалість копіювання: {duration}"
+runner.critical_error: "Критична помилка: {err}"
+runner.progress_prefix: "Прогрес:"
+
+# Folder Browser
+browser.title: "Огляд: {device}"
+browser.header: "-СПИСОК ДИРЕКТОРІЙ-\n===================="
+browser.path: "> ШЛЯХ: {path}"
+browser.back_btn: "[ < НАЗАД ]"
+browser.select_btn: "[ ВИБРАТИ ЦЮ ПАПКУ ]"
+browser.access_error: "> ПОМИЛКА ДОСТУПУ.\n> РОЗБЛОКУЙТЕ IPHONE ТА НАТИСНІТЬ 'ДОВІРЯТИ'."
+
+# Say Thanks Window
+thanks.header: "ВАШ ВНЕСОК ДОПОМАГАЄ РУХАТИСЯ ДАЛІ!"
+thanks.msg1: "Я СТВОРИВ MEDIA ICOPY, ЩОБ ВИРІШИТИ ПРОБЛЕМУ КОПІЮВАННЯ ФОТО ТА ВІДЕО\nЗ IOS НА WINDOWS - БЕЗКОШТОВНО, ПРОСТО, СТАБІЛЬНО І БЕЗ ЗАЙВИХ ОБМЕЖЕНЬ.\nЯКЩО ЦЯ ПРОГРАМА СТАЛА КОРИСНОЮ І ДЛЯ ВАС,\nНАЙКРАЩА ПОДЯКА — ЦЕ ВАША ПІДТРИМКА."
+thanks.msg_intro: "БУДЬ-ЯКА ВАША ДІЯ - ЦЕ ЗНАК, ЩО МОЯ РОБОТА БУЛА ЦІННОЮ ДЛЯ ВАС.\nСАМЕ ТАКА ПІДТРИМКА ДОПОМАГАЄ РОЗВИВАТИ ПРОГРАМУ ДАЛІ Й СТВОРЮВАТИ НОВІ\nКОРИСНІ ІНСТРУМЕНТИ."
+thanks.msg_reddit: "⬇ ЗАЛИШТЕ ВІДГУК, ПРОПОЗИЦІЇ АБО ПОДІЛІТЬСЯ З ІНШИМИ ⬇"
+thanks.msg_finance: "⬇ ЯКЩО Є МОЖЛИВІСТЬ ПІДТРИМАТИ ФІНАНСОВО ⬇"
+thanks.binance_copied: "> [ BINANCE ID СКОПІЙОВАНО В БУФЕР ОБМІНУ ]"
+thanks.footer: "ДЯКУЮ!"
+
+# Core Logic
+core.cancelled: "Операцію скасовано користувачем."
+
+# Update Checker
+app.update_indicator: "[ ДОСТУПНЕ ОНОВЛЕННЯ ]"
+update.title: "-ДОСТУПНЕ ОНОВЛЕННЯ-"
+update.message: "ВИЯВЛЕНО НОВУ ВЕРСІЮ ПРОГРАМИ (v{version}).\nПОТОЧНА ВЕРСІЯ: v{current}\nРЕКОМЕНДУЄТЬСЯ ОНОВИТИ ПРОГРАМУ."
+update.btn_download: "[ ЗАВАНТАЖИТИ ]"
+update.btn_skip: "[ ПРОПУСТИТИ ]"
