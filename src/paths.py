@@ -9,7 +9,7 @@ def get_base_dir() -> str:
     """
     if getattr(sys, 'frozen', False):
         # PyInstaller creates a temp folder and stores path in _MEIPASS
-        return sys._MEIPASS
+        return getattr(sys, '_MEIPASS')
     # In dev mode, go up one directory from src/ (to project root)
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -20,12 +20,20 @@ def resource_path(*parts: str) -> str:
 def get_user_data_dir() -> str:
     """Returns the directory for user-writable files (db, config, logs).
     
-    In frozen mode (PyInstaller): next to the .exe file.
+    In frozen mode (PyInstaller): %LOCALAPPDATA%/Media_iCopy or ~/.media-icopy
     In dev mode: project root.
     """
     if getattr(sys, 'frozen', False):
-        # sys.executable is the path to the .exe file
-        return os.path.dirname(sys.executable)
+        if os.name == 'nt':
+            # Windows: use LOCALAPPDATA
+            base_dir = os.environ.get('LOCALAPPDATA', os.environ.get('APPDATA', os.path.expanduser('~')))
+            app_dir = os.path.join(base_dir, 'Media_iCopy')
+        else:
+            # macOS/Linux: use ~/.media-icopy
+            app_dir = os.path.expanduser('~/.media-icopy')
+        
+        os.makedirs(app_dir, exist_ok=True)
+        return app_dir
     # In dev mode, project root
     return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
