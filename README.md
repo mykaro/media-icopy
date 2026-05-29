@@ -76,4 +76,5 @@ Every report helps make Media iCopy better.
 
 ---
 
+> Copyright (c) 2024-2026 Mykaro
 > Released under the GNU General Public License v3.0 (GPLv3).

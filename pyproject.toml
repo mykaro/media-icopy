@@ -2,8 +2,13 @@
 name = "media-icopy"
 version = "1.0.1"
 description = "Copy media files from iPhone to Windows PC via MTP"
+authors = [
+    {name = "Mykaro", email = "bymykaro@gmail.com"}
+]
+license = {file = "LICENSE"}
 requires-python = ">=3.10"
 classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: Microsoft :: Windows",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
